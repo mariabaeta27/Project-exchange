@@ -7,6 +7,7 @@
 - [Descrição](#descrição)
 - [Sistema de locação e permuta](#sistema-de-locação-e-permuta-de-veículos)
 - [Setup do projeto](#️-setup-do-projeto)
+- [Modelagem do banco de dados](#️-modelagem-do-banco-de-dados)
 - [Teste](#-rodando-os-testes)
 
 ## 📝 Descrição

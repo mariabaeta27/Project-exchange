@@ -1,99 +1,224 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
-</p>
+<h1 align="center">
+ 🚗 Sistema de locação e permuta de veículos
+</h1>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+## 📋 Sumário
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+- [Descrição](#descrição)
+- [Sistema de locação e permuta](#sistema-de-locação-e-permuta-de-veículos)
+- [Setup do projeto](#️-setup-do-projeto)
+- [Teste](#-rodando-os-testes)
 
-## Description
+## 📝 Descrição
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Este repositorio é um projeto de estudos utilizando o [NestJS](https://docs.nestjs.com/), um framework de Node.js que visa facilitar a criação de aplicações escalaveis de fácil manutenção.
+O objeto principal é aprender a utilizar o NestJS, explorando suas funcionalidades e práticas recomendadas, atraves da documentação oficial.
+Este projeto visa proporcionar uma experiência prática no desenvolvimento de uma aplicação backend, buscando entender os conceitos fundamentais como:
 
-## Project setup
+- [Controllers](https://docs.nestjs.com/controllers);
+- [Services](https://docs.nestjs.com/controllers);
+- [Modules](https://docs.nestjs.com/modules);
+- [Middlewares](https://docs.nestjs.com/modules);
+- [Pipes](https://docs.nestjs.com/pipes);
+- Entre outros (a adicionar...);
+
+<details>
+
+<summary><strong> 📌 Objetivo</strong></summary>
+O intuito do projeto é:
+
+- Aprender a estrutura e os componentes do NestJs;
+- Estudar e entender os conceitos de arquitetura;
+- Construir uma API simples que será expandida à medida que o aprendizado avança;
+- Aplicar boas práticas de desenvolvimento e arquitetura de software utilizando NestJs;
+- Explorar o uso de testes unitários e integração no ambiente NestJs.
+
+</details>
+
+<details>
+
+<summary><strong>🛠️ Pré-requisitos</strong></summary>
+
+Antes de começar, certifique-se de ter os seguintes requisitos instalados:
+
+- Node.js (verificar versão...);
+- Yarn;
+- Banco de dados (a definir...);
+- Docker (opcional, para containerização).
+
+</details>
+
+<details>
+  <summary><strong>💻 Tecnologias Utilizadas</strong></summary>
+
+- **NestJS:** Framework para construção de aplicação backend com Node.Js;
+- **Node.js:** Ambiente de execução JavaScript no lado do servidor;
+- **Typescript:** Superset do Javascript utilizado por padrão no NestJs;
+- **Express:** Framework HTTP subjacente por padrão do NestJs;
+- **BANCO DE DADOS A DEFINIR...**.
+
+</details>
+
+<details>
+<summary><strong>🚀 Implementações</strong></summary>
+
+- Implementação de uma API RESTful simples;
+- Autenticação e Autorização (JWT, Sessions ou outras abordagens);
+- CRUD (Create, Read, Update, Delete) básico para gerenciamento de recursos;
+- Validação de dados usando Pipes;
+- Documentação da API utilizando Swagger;
+- Testes unitários e de integração com Jest;
+- Como Rodar o Projeto.
+
+</details>
+
+## Sistema de Locação e Permuta de Veículos
+
+### 📌Objetivo do projeto
+
+Esse sistema tem como objetivo facilitar a locação e permuta de veículos entre motoristas. A aplicação vai permitir que os motoristas aluguem veículos de maneira simples, além de permitir a troca de veículos entre os motoristas de forma segura e controlada.
+O sistema gerencia:
+
+- Motoristas;
+- Veúlos;
+- Transações.
+
+Garantindo que todos os processos de locação e permuta sejam registrados e acompanhandos.
+
+### 🔥 Principais funcionalidades
+
+<details>
+<summary><strong>🚀 Cadatro e gerenciamento de motorista</strong></summary>
+
+- [ ] Cadastro de motorista (CRUD);
+- [ ] Validar se o documento já está cadastrado;
+- [ ] Validar o formato do documento informado.
+
+
+</details>
+
+<details>
+<summary><strong>🚀 Registro e controlo de veículos</strong></summary>
+
+- [ ] Cadastro de veículo (CRUD);
+- [ ] Validar se a placa já foi cadastrada;
+- [ ] Validar o formato da placa informada.
+
+
+</details>
+
+<details>
+<summary><strong>🚀 Processo de locação</strong></summary>
+
+- [ ] Relacionamento entre Motorista x Veículo (CRUD);
+- [ ] Não permitir que um veículo estejá com mais de um motorista;
+- [ ] Manter historio das locações;
+- [ ] Processo de devolução do veículo.
+
+</details>
+
+<details>
+<summary><strong>🚀 Processo de permuta</strong></summary>
+
+- [ ] Permitir o processo de permuta entre os motorista;
+- [ ] Não permitir que as locações fiquem sem veículos relacionados
+
+</details>
+
+## 🏗️ Modelagem do Banco de dados
+
+<details>
+<summary><strong> 👨‍✈️ Motoristas (drives) </strong></summary>
+
+- Id(PK);
+- Nome;
+- Cnh;
+- Contato;
+- Status;
+- Data de criação;
+- Data da atualização
+
+</details>
+
+<details>
+<summary><strong> 🚗 Veículos (vehicles)</strong></summary>
+
+- Id(PK);
+- Modelo;
+- Placa;
+- Disponibilidade;
+- Status;
+- Data de criação;
+- Data da atualização.
+
+</details>
+
+<details>
+<summary><strong>🔄 Transações (transactions)</strong></summary>
+
+- Id(PK);
+- Id Motorista;
+- Id Veículo;
+- Data de locação;
+- Data de devolução;
+- Status;
+- Data de criação;
+- Data da atualização.
+
+</details>
+
+## ⚙️ Setup do Projeto
+
+1. Clone o repositorio
 
 ```bash
-$ yarn install
+git clone <https://github.com/mariabaeta27/Project-exchange.git>
 ```
 
-## Compile and run the project
+2. Acesse a pasta do projeto
 
 ```bash
-# development
-$ yarn run start
-
-# watch mode
-$ yarn run start:dev
-
-# production mode
-$ yarn run start:prod
+cd Project-exchange
 ```
 
-## Run tests
+3. Instale as dependências
 
 ```bash
-# unit tests
-$ yarn run test
-
-# e2e tests
-$ yarn run test:e2e
-
-# test coverage
-$ yarn run test:cov
+yarn install
 ```
 
-## Deployment
-
-When you're ready to deploy your NestJS application to production, there are some key steps you can take to ensure it runs as efficiently as possible. Check out the [deployment documentation](https://docs.nestjs.com/deployment) for more information.
-
-If you are looking for a cloud-based platform to deploy your NestJS application, check out [Mau](https://mau.nestjs.com), our official platform for deploying NestJS applications on AWS. Mau makes deployment straightforward and fast, requiring just a few simple steps:
+4. Configure as variáveis de ambiente
 
 ```bash
-$ yarn install -g mau
-$ mau deploy
+---
 ```
 
-With Mau, you can deploy your application in just a few clicks, allowing you to focus on building features rather than managing infrastructure.
+5. Rodar as migrations
 
-## Resources
+```bash
+---
+```
 
-Check out a few resources that may come in handy when working with NestJS:
+6. Iniciar o servidor
 
-- Visit the [NestJS Documentation](https://docs.nestjs.com) to learn more about the framework.
-- For questions and support, please visit our [Discord channel](https://discord.gg/G7Qnnhy).
-- To dive deeper and get more hands-on experience, check out our official video [courses](https://courses.nestjs.com/).
-- Deploy your application to AWS with the help of [NestJS Mau](https://mau.nestjs.com) in just a few clicks.
-- Visualize your application graph and interact with the NestJS application in real-time using [NestJS Devtools](https://devtools.nestjs.com).
-- Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).
-- To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
-- Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
+```bash
+yarn start ou yarn start:dev
+```
 
-## Support
+7. Acessar a aplicação
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+```bash
+---
+```
 
-## Stay in touch
+## 🎯 Rodando os testes
 
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+Para executar os testes rode:
 
-## License
+```bash
+yarn test
+```
 
-Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+### Contribuições
+
+Este projeto é puramente para fins de aprendizado. Caso você tenha alguma sugestão ou queria contribuir com melhorias, sinta-se à vontade para abrir um [issue](https://docs.github.com/pt/issues/tracking-your-work-with-issues/about-issues) ou submter um [pull request](https://docs.github.com/pt/desktop/working-with-your-remote-repository-on-github-or-github-enterprise/viewing-a-pull-request-in-github-desktop)

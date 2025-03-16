@@ -95,7 +95,6 @@ Garantindo que todos os processos de locação e permuta sejam registrados e aco
 - [ ] Validar se o documento já está cadastrado;
 - [ ] Validar o formato do documento informado.
 
-
 </details>
 
 <details>
@@ -104,7 +103,6 @@ Garantindo que todos os processos de locação e permuta sejam registrados e aco
 - [ ] Cadastro de veículo (CRUD);
 - [ ] Validar se a placa já foi cadastrada;
 - [ ] Validar o formato da placa informada.
-
 
 </details>
 
